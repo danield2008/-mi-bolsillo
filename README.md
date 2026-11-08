@@ -32,7 +32,7 @@ Abre la carpeta en Visual Studio Code y sirve los archivos con cualquier servido
 En GitHub, entra en **Settings → Pages**, elige **Deploy from a branch**, selecciona `main` y la carpeta `/(root)`. Guarda los cambios.
 
 ## Dominio
-El dominio previsto es `mibolsillo.es`. No se ha configurado todavía. Cuando se conecte, configura los registros DNS solicitados por GitHub Pages, añade un archivo `CNAME` con el dominio elegido y activa HTTPS desde Pages cuando esté disponible.
+Por ahora el sitio utiliza la dirección gratuita de GitHub Pages: `https://danield2008.github.io/-mi-bolsillo/`. No se ha configurado un dominio personalizado ni se necesita comprar uno para continuar. Si más adelante se registra `mibolsillo.es`, se actualizarán las URL canónicas, los metadatos y la configuración DNS/CNAME antes de conectar el dominio.
 
 ## SEO y contenido
 Antes del lanzamiento:
