@@ -1,0 +1,31 @@
+name: Corrección o sugerencia para Mi Bolsillo
+description: Comunica un error de contenido o propone una mejora general del sitio.
+title: "[Corrección] "
+labels: ["contenido"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Este repositorio es público. **No compartas datos personales, información bancaria, documentos, contraseñas ni detalles de tu situación financiera.**
+  - type: input
+    id: page
+    attributes:
+      label: Página afectada
+      description: Pega la URL pública del artículo o herramienta.
+      placeholder: https://danield2008.github.io/-mi-bolsillo/...
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Corrección o sugerencia
+      description: Explica qué debería revisarse y por qué.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Fuente de referencia (opcional)
+      description: Añade un enlace oficial o documentación pública que permita comprobarlo.
+    validations:
+      required: false
