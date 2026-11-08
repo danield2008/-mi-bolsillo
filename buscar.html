@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscar artículos | Mi Bolsillo</title>
+<meta name="description" content="Busca guías y recursos publicados en Mi Bolsillo sobre ahorro, presupuesto y finanzas personales.">
+<meta name="robots" content="noindex, follow"><meta name="theme-color" content="#123B36">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg"><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/responsive.css"><link rel="stylesheet" href="assets/css/content.css">
+<script src="assets/js/layout.js" defer data-root="./"></script><script src="assets/js/main.js" defer></script><script src="assets/js/search.js" defer></script>
+</head><body><div id="site-header"></div><main id="contenido">
+<header class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="Migas de pan"><ol><li><a href="index.html">Inicio</a></li><li aria-hidden="true">/</li><li aria-current="page">Buscar</li></ol></nav><span class="page-kicker">BUSCADOR</span><h1 class="page-title">¿Qué quieres aprender?</h1><p class="page-lead">Busca entre los artículos publicados en Mi Bolsillo.</p></div></header>
+<section class="content-shell"><div class="content-narrow">
+<form class="search-box" id="search-form" role="search" action="buscar.html" method="get"><label class="visually-hidden" for="article-search">Buscar artículos</label><span aria-hidden="true">⌕</span><input type="search" id="article-search" name="q" placeholder="Ej. ahorro, préstamo, presupuesto..." autocomplete="off"><button type="submit">Buscar</button></form>
+<p id="search-status" class="search-status" role="status" aria-live="polite">Introduce una palabra para buscar.</p>
+<div class="article-grid" id="search-results"></div>
+<p id="no-results" class="no-results" hidden>No encontramos artículos con esa búsqueda. Prueba con otra palabra o explora <a href="categorias/index.html">todas las categorías</a>.</p>
+<p style="margin-top:24px"><a href="blog/index.html">← Volver al blog</a></p>
+</div></section>
+</main><div id="site-footer"></div></body></html>
