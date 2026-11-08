@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de fondo de emergencia | Mi Bolsillo</title>
+  <meta name="description" content="Calcula tu objetivo de fondo de emergencia y cuánto te falta por ahorrar según tus gastos esenciales.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B36">
+  <link rel="canonical" href="https://mibolsillo.es/herramientas/fondo-emergencia.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <script src="../assets/js/layout.js" defer data-root="../"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/calculators.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="contenido">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+          <ol><li><a href="../index.html">Inicio</a></li><li aria-hidden="true">/</li><li><a href="index.html">Herramientas</a></li><li aria-hidden="true">/</li><li aria-current="page">Fondo de emergencia</li></ol>
+        </nav>
+        <span class="page-kicker">HERRAMIENTA GRATUITA</span>
+        <h1 class="page-title">Calculadora de fondo de emergencia</h1>
+        <p class="page-lead">Calcula un objetivo de ahorro para imprevistos usando tus gastos esenciales y el número de meses que quieres cubrir.</p>
+      </div>
+    </header>
+
+    <section class="content-shell">
+      <div class="calculator-wrap">
+        <div class="calculator-panel">
+          <div class="calculator-intro">
+            <p>Introduce tus datos y pulsa el botón para obtener una estimación. Los cálculos se realizan en tu navegador; los valores no se envían a Mi Bolsillo.</p>
+          </div>
+          <form class="calculator-form" id="emergency-form" data-calculator="emergency" novalidate>
+            <div class="calculator-fields">
+              <div class="calculator-field"><label for="emergency-expenses">Gastos esenciales al mes (€)</label><input id="emergency-expenses" type="number" min="0" step="0.01" value="1000" inputmode="decimal" required><small>Incluye vivienda, suministros, alimentación básica, transporte y pagos imprescindibles.</small></div>
+  <div class="calculator-field"><label for="emergency-months">Meses que quieres cubrir</label><select id="emergency-months"><option value="3">3 meses</option><option value="4">4 meses</option><option value="5">5 meses</option><option value="6" selected>6 meses</option><option value="9">9 meses</option><option value="12">12 meses</option></select></div>
+  <div class="calculator-field"><label for="emergency-current">Ahorro que ya tienes (€)</label><input id="emergency-current" type="number" min="0" step="0.01" value="500" inputmode="decimal" required></div>
+            </div>
+            <button class="btn btn-primary calculator-submit" type="submit">Calcular resultado →</button>
+            <div class="calculator-error" id="calculator-error" role="alert" hidden></div>
+          </form>
+          <div class="calculator-result" id="calculator-result" aria-live="polite" hidden></div>
+        </div>
+        <div class="content-narrow calculator-help">
+          <h2>Cómo elegir el objetivo</h2><p>Una referencia habitual es reservar varios meses de gastos esenciales. El número adecuado depende de la estabilidad de tus ingresos, personas a cargo, salud financiera, facilidad para encontrar empleo y otros apoyos disponibles.</p><p>El fondo debe ser accesible y estar separado del dinero destinado a gastos cotidianos o inversiones de riesgo. Esta calculadora no determina qué producto bancario debes utilizar.</p>
+          <div class="notice-box"><p><strong>Importante:</strong> resultado orientativo basado en los datos introducidos. No es una oferta, una garantía de rentabilidad ni asesoramiento financiero personalizado.</p></div>
+          <p><a href="index.html">← Volver a todas las herramientas</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
