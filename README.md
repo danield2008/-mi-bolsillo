@@ -51,3 +51,14 @@ El contenido será educativo y no sustituye el asesoramiento financiero personal
 
 ## Plan editorial
 El mapa SEO de 60 artículos está en [docs/plan-editorial-60-articulos.md](docs/plan-editorial-60-articulos.md). Incluye siete clústeres temáticos, palabras clave principales, intención de búsqueda, dificultad cualitativa y las 15 primeras prioridades de cola larga.
+
+
+## Artículos publicados
+En `blog/` están disponibles los tres primeros artículos completos:
+- `como-ahorrar-100-euros.html` — ahorro mensual.
+- `regla-50-30-20.html` — organización del sueldo.
+- `fondo-emergencia.html` — reserva para imprevistos.
+
+El índice del blog está en `blog/index.html`. Se han creado páginas de categoría para ahorro y presupuesto. Las categorías todavía sin artículos propios se muestran temporalmente como secciones en preparación y llevan `noindex` hasta que tengan contenido suficiente.
+
+Los artículos incluyen metadatos SEO, URL canónica, Open Graph, datos estructurados Article, BreadcrumbList y FAQPage, índice automático, tiempo estimado de lectura, controles para compartir y fuentes oficiales enlazadas. Las estimaciones de lectura se calculan en navegador.
