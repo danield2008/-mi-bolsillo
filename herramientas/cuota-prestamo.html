@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de cuota de préstamo | Mi Bolsillo</title>
+  <meta name="description" content="Calcula una cuota mensual aproximada de préstamo y el total de intereses según capital, tipo y plazo.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B36">
+  <link rel="canonical" href="https://mibolsillo.es/herramientas/cuota-prestamo.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <script src="../assets/js/layout.js" defer data-root="../"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/calculators.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="contenido">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+          <ol><li><a href="../index.html">Inicio</a></li><li aria-hidden="true">/</li><li><a href="index.html">Herramientas</a></li><li aria-hidden="true">/</li><li aria-current="page">Cuota de préstamo</li></ol>
+        </nav>
+        <span class="page-kicker">HERRAMIENTA GRATUITA</span>
+        <h1 class="page-title">Calculadora de cuota de préstamo</h1>
+        <p class="page-lead">Estima la cuota mensual de un préstamo amortizable a partir del capital, el tipo de interés anual y el plazo.</p>
+      </div>
+    </header>
+
+    <section class="content-shell">
+      <div class="calculator-wrap">
+        <div class="calculator-panel">
+          <div class="calculator-intro">
+            <p>Introduce tus datos y pulsa el botón para obtener una estimación. Los cálculos se realizan en tu navegador; los valores no se envían a Mi Bolsillo.</p>
+          </div>
+          <form class="calculator-form" id="loan-form" data-calculator="loan" novalidate>
+            <div class="calculator-fields">
+              <div class="calculator-field"><label for="loan-principal">Importe del préstamo (€)</label><input id="loan-principal" type="number" min="0.01" step="0.01" value="10000" inputmode="decimal" required></div>
+  <div class="calculator-field"><label for="loan-rate">Tipo de interés anual (%)</label><input id="loan-rate" type="number" min="0" max="100" step="0.01" value="6" inputmode="decimal" required><small>Introduce el tipo nominal anual para esta estimación.</small></div>
+  <div class="calculator-field"><label for="loan-years">Plazo (años)</label><input id="loan-years" type="number" min="1" max="40" step="1" value="5" inputmode="numeric" required></div>
+            </div>
+            <button class="btn btn-primary calculator-submit" type="submit">Calcular resultado →</button>
+            <div class="calculator-error" id="calculator-error" role="alert" hidden></div>
+          </form>
+          <div class="calculator-result" id="calculator-result" aria-live="polite" hidden></div>
+        </div>
+        <div class="content-narrow calculator-help">
+          <h2>Cómo se estima la cuota</h2><p>Se utiliza el sistema francés de amortización, con cuotas mensuales constantes y un tipo mensual igual al tipo anual dividido entre 12.</p><p>La cuota estimada no incluye comisiones de apertura, seguros, productos vinculados, gastos ni posibles cambios de tipo en préstamos variables. No equivale necesariamente a la TAE ni a la oferta de una entidad.</p><h2>Antes de contratar</h2><p>Compara la TAE, el coste total, las comisiones, las condiciones de amortización anticipada y la documentación precontractual.</p>
+          <div class="notice-box"><p><strong>Importante:</strong> resultado orientativo basado en los datos introducidos. No es una oferta, una garantía de rentabilidad ni asesoramiento financiero personalizado.</p></div>
+          <p><a href="index.html">← Volver a todas las herramientas</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
