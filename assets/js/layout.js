@@ -30,7 +30,15 @@
       <footer class="site-footer"><div class="container"><div class="footer-grid">
         <div class="footer-brand"><a href="${root}index.html" class="brand" aria-label="Mi Bolsillo - Inicio">${logo}</a><p class="footer-description">Educación financiera para todos. Aprende a ahorrar, organizar tu dinero y tomar mejores decisiones.</p></div>
         <div class="footer-column"><h3>Aprende</h3><ul>
-          <li><a href="${root}categorias/ahorro/index.html">Ahorro</a></li><li><a href="${root}categorias/presupuesto/index.html">Presupuesto</a></li><li><a href="${root}categorias/deudas/index.html">Deudas</a></li><li><a href="${root}categorias/inversion/index.html">Inversión</a></li><li><a href="${root}blog/index.html">Blog</a></li>
+          <li><a href="${root}categorias/index.html">Todas las categorías</a></li>
+          <li><a href="${root}categorias/ahorro/index.html">Ahorro</a></li>
+          <li><a href="${root}categorias/presupuesto/index.html">Presupuesto</a></li>
+          <li><a href="${root}categorias/deudas/index.html">Deudas y créditos</a></li>
+          <li><a href="${root}categorias/inversion/index.html">Inversión</a></li>
+          <li><a href="${root}categorias/ingresos-extra/index.html">Ingresos extra</a></li>
+          <li><a href="${root}categorias/impuestos/index.html">Impuestos y trámites</a></li>
+          <li><a href="${root}categorias/banca/index.html">Banca y tarjetas</a></li>
+          <li><a href="${root}blog/index.html">Blog</a></li>
         </ul></div>
         <div class="footer-column"><h3>Herramientas</h3><ul>
           <li><a href="${root}herramientas/calculadora-ahorro.html">Calculadora de ahorro</a></li><li><a href="${root}herramientas/interes-compuesto.html">Interés compuesto</a></li><li><a href="${root}herramientas/regla-50-30-20.html">Regla 50/30/20</a></li><li><a href="${root}herramientas/cuota-prestamo.html">Cuota de préstamo</a></li>
