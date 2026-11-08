@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de interés compuesto | Mi Bolsillo</title>
+  <meta name="description" content="Simula el crecimiento de un ahorro o inversión con interés compuesto, aportaciones mensuales y una tasa anual hipotética.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B36">
+  <link rel="canonical" href="https://mibolsillo.es/herramientas/interes-compuesto.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <script src="../assets/js/layout.js" defer data-root="../"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/calculators.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="contenido">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+          <ol><li><a href="../index.html">Inicio</a></li><li aria-hidden="true">/</li><li><a href="index.html">Herramientas</a></li><li aria-hidden="true">/</li><li aria-current="page">Interés compuesto</li></ol>
+        </nav>
+        <span class="page-kicker">HERRAMIENTA GRATUITA</span>
+        <h1 class="page-title">Calculadora de interés compuesto</h1>
+        <p class="page-lead">Estima cómo podría evolucionar un capital si reinviertes los rendimientos y realizas aportaciones periódicas.</p>
+      </div>
+    </header>
+
+    <section class="content-shell">
+      <div class="calculator-wrap">
+        <div class="calculator-panel">
+          <div class="calculator-intro">
+            <p>Introduce tus datos y pulsa el botón para obtener una estimación. Los cálculos se realizan en tu navegador; los valores no se envían a Mi Bolsillo.</p>
+          </div>
+          <form class="calculator-form" id="compound-form" data-calculator="compound" novalidate>
+            <div class="calculator-fields">
+              <div class="calculator-field"><label for="compound-initial">Capital inicial (€)</label><input id="compound-initial" type="number" min="0" step="0.01" value="1000" inputmode="decimal" required></div>
+  <div class="calculator-field"><label for="compound-monthly">Aportación mensual (€)</label><input id="compound-monthly" type="number" min="0" step="0.01" value="100" inputmode="decimal" required></div>
+  <div class="calculator-field"><label for="compound-rate">Rentabilidad anual hipotética (%)</label><input id="compound-rate" type="number" min="-99" max="100" step="0.1" value="5" inputmode="decimal" required><small>Puede ser negativa o positiva. No representa una rentabilidad esperada.</small></div>
+  <div class="calculator-field"><label for="compound-years">Duración (años)</label><input id="compound-years" type="number" min="0.08" max="80" step="0.1" value="10" inputmode="decimal" required></div>
+            </div>
+            <button class="btn btn-primary calculator-submit" type="submit">Calcular resultado →</button>
+            <div class="calculator-error" id="calculator-error" role="alert" hidden></div>
+          </form>
+          <div class="calculator-result" id="calculator-result" aria-live="polite" hidden></div>
+        </div>
+        <div class="content-narrow calculator-help">
+          <h2>Qué supone esta simulación</h2><p>La calculadora divide la tasa anual nominal indicada entre 12 y aplica capitalización mensual. Las aportaciones se consideran realizadas al final de cada mes.</p><p>El cálculo no incorpora impuestos, comisiones, inflación, cambios de rentabilidad ni volatilidad. Una rentabilidad positiva no está garantizada y una inversión puede perder valor.</p><h2>Interés compuesto</h2><p>Se produce cuando los rendimientos obtenidos permanecen invertidos y también pueden generar rendimientos en periodos posteriores. El resultado es matemático, no una predicción del mercado.</p>
+          <div class="notice-box"><p><strong>Importante:</strong> resultado orientativo basado en los datos introducidos. No es una oferta, una garantía de rentabilidad ni asesoramiento financiero personalizado.</p></div>
+          <p><a href="index.html">← Volver a todas las herramientas</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
