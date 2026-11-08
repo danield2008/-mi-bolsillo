@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /buscar.html
+Disallow: /blog/plantilla-articulo.html
+Disallow: /docs/
+
+Sitemap: https://danield2008.github.io/-mi-bolsillo/sitemap.xml
