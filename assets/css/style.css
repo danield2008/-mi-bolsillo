@@ -15,7 +15,7 @@
 .ad-container{padding-top:15px;padding-bottom:35px}.ad-placeholder{width:100%;min-height:120px;border:1px dashed var(--border);background:var(--surface-soft);border-radius:8px;display:grid;place-items:center}.ad-placeholder span{color:var(--text-secondary);font-size:.68rem;letter-spacing:.12em}.trust-section{background:var(--surface)}.trust-content{display:grid;grid-template-columns:1fr 1fr;gap:30px 65px;align-items:center}.trust-content h2{max-width:470px}.trust-content p{line-height:1.9}.trust-content .btn{justify-self:start}
 .site-footer{background:#102D35;color:#fff;padding:65px 0 25px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:45px}.footer-brand .brand-name{color:white}.footer-brand .brand-logo{background:#1D3C30;color:#B8E8CD}.footer-description{color:#C0D0CA;max-width:290px;font-size:.84rem;margin-top:20px}.footer-column h3{color:white;font-size:.9rem;margin-bottom:20px;letter-spacing:0}.footer-column ul{display:flex;flex-direction:column;gap:11px}.footer-column a{color:#C0D0CA;font-size:.81rem}.footer-column a:hover{color:white}.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:20px}.footer-bottom p{color:#A9BCB4;font-size:.75rem}
 
-@media(prefers-reduced-motion:no-preference){.hero-content{animation:fade-up .6s ease both}.hero-visual{animation:fade-up .8s ease both}@keyframes fade-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}}[hidden]{display:none!important}
+[hidden]{display:none!important}
 
 /* Buscador desplegable de la cabecera */
 .header-search-panel{position:absolute;top:calc(100% + 8px);right:max(calc((100% - var(--container))/2),24px);width:min(460px,calc(100vw - 32px));padding:18px;background:var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:0 18px 48px rgba(0,0,0,.38);z-index:1002}
@@ -33,3 +33,154 @@
 .header-search-result strong{font-size:.86rem;line-height:1.35;color:var(--text)}
 .header-search-result span{font-size:.74rem;line-height:1.45;color:var(--text-secondary)}
 @media(max-width:760px){.header-search-panel{right:16px;width:min(460px,calc(100vw - 32px));padding:14px}}
+
+
+/* MI BOLSILLO · Motion design sutil y optimizado */
+
+/* Aparición escalonada del hero */
+@media (prefers-reduced-motion: no-preference) {
+  .motion-ready .hero [data-hero-step],
+  .motion-ready .hero [data-hero-visual] {
+    animation: hero-enter .68s cubic-bezier(.2,.7,.2,1) both;
+  }
+
+  .motion-ready .hero [data-hero-step="0"] { animation-delay: 0s; }
+  .motion-ready .hero [data-hero-step="1"] { animation-delay: .10s; }
+  .motion-ready .hero [data-hero-step="2"] { animation-delay: .20s; }
+  .motion-ready .hero [data-hero-step="3"] { animation-delay: .30s; }
+  .motion-ready .hero [data-hero-step="4"] { animation-delay: .40s; }
+  .motion-ready .hero [data-hero-visual] { animation-delay: .24s; }
+
+  @keyframes hero-enter {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Fade-in + slide-up al entrar en pantalla */
+  .motion-ready [data-reveal] {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity .65s cubic-bezier(.2,.7,.2,1) var(--reveal-delay, 0ms),
+      transform .65s cubic-bezier(.2,.7,.2,1) var(--reveal-delay, 0ms);
+  }
+
+  .motion-ready [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Cabecera: oscurecimiento ligero y elevación mínima al hacer scroll */
+  .site-header {
+    isolation: isolate;
+  }
+
+  .site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: #07100E;
+    opacity: 0;
+    transition: opacity .38s ease;
+  }
+
+  .site-header > .header-inner {
+    position: relative;
+    z-index: 1;
+    transition: transform .38s cubic-bezier(.2,.7,.2,1);
+  }
+
+  .site-header.is-scrolled::before {
+    opacity: .28;
+  }
+
+  .site-header.is-scrolled > .header-inner {
+    transform: translateY(-1px);
+  }
+
+  .site-header > .header-search-panel {
+    z-index: 2;
+  }
+
+  /* Las microinteracciones animan únicamente transform y opacity. */
+  .btn,
+  .icon-button,
+  .text-link,
+  .article-link,
+  .category-card,
+  .article-card,
+  .tool-card,
+  .tool-directory-card,
+  .related-card {
+    transition:
+      transform .32s cubic-bezier(.2,.7,.2,1),
+      opacity .32s ease;
+  }
+
+  .category-card,
+  .article-card,
+  .tool-card,
+  .tool-directory-card,
+  .related-card {
+    will-change: auto;
+  }
+
+  .article-image .image-symbol {
+    transition: transform .48s cubic-bezier(.2,.7,.2,1), opacity .48s ease;
+  }
+
+  .icon-button:hover,
+  .btn:hover {
+    transform: translateY(-2px);
+    opacity: .96;
+  }
+
+  .text-link:hover,
+  .article-link:hover {
+    transform: translateX(2px);
+  }
+
+  .category-card:hover,
+  .article-card:hover,
+  .tool-card:hover,
+  .tool-directory-card:hover,
+  .related-card:hover {
+    transform: translateY(-4px);
+    opacity: .98;
+  }
+
+  .article-card:hover .article-image .image-symbol {
+    transform: scale(1.06);
+  }
+}
+
+/* En dispositivos táctiles no forzamos elevaciones al tocar tarjetas. */
+@media (hover: none), (pointer: coarse) {
+  .category-card:hover,
+  .article-card:hover,
+  .tool-card:hover,
+  .tool-directory-card:hover,
+  .related-card:hover,
+  .btn:hover,
+  .icon-button:hover {
+    transform: none;
+  }
+}
+
+/* La accesibilidad tiene prioridad sobre los efectos visuales. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
