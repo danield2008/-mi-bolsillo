@@ -21,7 +21,6 @@
         </nav>
         <div class="header-actions">
           <a class="icon-button" href="${root}buscar.html" aria-label="Buscar artículos" title="Buscar">⌕</a>
-          <button class="icon-button" id="theme-toggle" type="button" aria-label="Activar modo oscuro" title="Cambiar tema"><span id="theme-icon" aria-hidden="true">☾</span></button>
           <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span></button>
         </div>
       </div></header>`;
