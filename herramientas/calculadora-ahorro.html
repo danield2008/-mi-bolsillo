@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de ahorro | Mi Bolsillo</title>
+  <meta name="description" content="Calcula cuánto puedes ahorrar en un periodo determinado con esta calculadora gratuita de Mi Bolsillo.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B36">
+  <link rel="canonical" href="https://mibolsillo.es/herramientas/calculadora-ahorro.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <script src="../assets/js/layout.js" defer data-root="../"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/calculators.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="contenido">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+          <ol><li><a href="../index.html">Inicio</a></li><li aria-hidden="true">/</li><li><a href="index.html">Herramientas</a></li><li aria-hidden="true">/</li><li aria-current="page">Calculadora de ahorro</li></ol>
+        </nav>
+        <span class="page-kicker">HERRAMIENTA GRATUITA</span>
+        <h1 class="page-title">Calculadora de ahorro</h1>
+        <p class="page-lead">Calcula cuánto dinero puedes reunir ahorrando una cantidad fija cada mes, con o sin un ahorro inicial.</p>
+      </div>
+    </header>
+
+    <section class="content-shell">
+      <div class="calculator-wrap">
+        <div class="calculator-panel">
+          <div class="calculator-intro">
+            <p>Introduce tus datos y pulsa el botón para obtener una estimación. Los cálculos se realizan en tu navegador; los valores no se envían a Mi Bolsillo.</p>
+          </div>
+          <form class="calculator-form" id="savings-form" data-calculator="savings" novalidate>
+            <div class="calculator-fields">
+              <div class="calculator-field"><label for="initial-savings">Ahorro inicial (€)</label><input id="initial-savings" name="initial" type="number" min="0" step="0.01" value="0" inputmode="decimal" required><small>Dinero que ya tienes reservado para este objetivo.</small></div>
+  <div class="calculator-field"><label for="monthly-savings">Ahorro mensual (€)</label><input id="monthly-savings" name="monthly" type="number" min="0" step="0.01" value="100" inputmode="decimal" required><small>Cantidad que puedes apartar cada mes.</small></div>
+  <div class="calculator-field"><label for="savings-years">Duración (años)</label><input id="savings-years" name="years" type="number" min="0.08" max="80" step="0.1" value="1" inputmode="decimal" required><small>Se convierte a meses para realizar el cálculo.</small></div>
+            </div>
+            <button class="btn btn-primary calculator-submit" type="submit">Calcular resultado →</button>
+            <div class="calculator-error" id="calculator-error" role="alert" hidden></div>
+          </form>
+          <div class="calculator-result" id="calculator-result" aria-live="polite" hidden></div>
+        </div>
+        <div class="content-narrow calculator-help">
+          <h2>¿Cómo se calcula?</h2><p>La estimación suma el ahorro inicial y todas las aportaciones mensuales del periodo. No incluye intereses, comisiones, inflación ni cambios en la cantidad que ahorras.</p><p><strong>Fórmula:</strong> ahorro final = ahorro inicial + (ahorro mensual × número de meses).</p><h2>Ejemplo</h2><p>Con 200 € iniciales y 100 € al mes durante 12 meses, reunirías 1.400 € antes de intereses o costes.</p>
+          <div class="notice-box"><p><strong>Importante:</strong> resultado orientativo basado en los datos introducidos. No es una oferta, una garantía de rentabilidad ni asesoramiento financiero personalizado.</p></div>
+          <p><a href="index.html">← Volver a todas las herramientas</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
