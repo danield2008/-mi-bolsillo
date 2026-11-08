@@ -15,10 +15,7 @@
         <a href="${root}index.html" class="brand" aria-label="Mi Bolsillo - Inicio">${logo}</a>
         <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
           <a href="${root}index.html">Inicio</a>
-          <a href="${root}categorias/ahorro/index.html">Ahorro</a>
-          <a href="${root}categorias/presupuesto/index.html">Presupuesto</a>
-          <a href="${root}categorias/deudas/index.html">Deudas</a>
-          <a href="${root}categorias/inversion/index.html">Inversión</a>
+          <a href="${root}categorias/index.html">Categorías</a>
           <a href="${root}herramientas/index.html">Calculadoras</a>
           <a href="${root}blog/index.html">Blog</a>
         </nav>
