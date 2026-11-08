@@ -20,7 +20,7 @@
           <a href="${root}blog/index.html">Blog</a>
         </nav>
         <div class="header-actions">
-          <a class="icon-button" href="${root}buscar.html" aria-label="Buscar artículos" title="Buscar">⌕</a>
+          <a class="icon-button search-button" href="${root}buscar.html" aria-label="Buscar artículos" title="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg></a>
           <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span></button>
         </div>
       </div></header>`;
