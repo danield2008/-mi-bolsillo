@@ -23,6 +23,7 @@
           <a href="${root}blog/index.html">Blog</a>
         </nav>
         <div class="header-actions">
+          <a class="icon-button" href="${root}buscar.html" aria-label="Buscar artículos" title="Buscar">⌕</a>
           <button class="icon-button" id="theme-toggle" type="button" aria-label="Activar modo oscuro" title="Cambiar tema"><span id="theme-icon" aria-hidden="true">☾</span></button>
           <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span></button>
         </div>
@@ -39,7 +40,7 @@
           <li><a href="${root}herramientas/calculadora-ahorro.html">Calculadora de ahorro</a></li><li><a href="${root}herramientas/interes-compuesto.html">Interés compuesto</a></li><li><a href="${root}herramientas/regla-50-30-20.html">Regla 50/30/20</a></li><li><a href="${root}herramientas/cuota-prestamo.html">Cuota de préstamo</a></li>
         </ul></div>
         <div class="footer-column"><h3>Información</h3><ul>
-          <li><a href="${root}sobre-nosotros.html">Sobre nosotros</a></li><li><a href="${root}contacto.html">Contacto</a></li><li><a href="${root}legal/privacidad.html">Privacidad</a></li><li><a href="${root}legal/cookies.html">Cookies</a></li><li><a href="${root}legal/aviso-legal.html">Aviso legal</a></li><li><a href="${root}legal/descargo-financiero.html">Aviso financiero</a></li>
+          <li><a href="${root}categorias/index.html">Todas las categorías</a></li><li><a href="${root}buscar.html">Buscar artículos</a></li><li><a href="${root}sobre-nosotros.html">Sobre nosotros</a></li><li><a href="${root}contacto.html">Contacto</a></li><li><a href="${root}legal/privacidad.html">Privacidad</a></li><li><a href="${root}legal/cookies.html">Cookies</a></li><li><a href="${root}legal/aviso-legal.html">Aviso legal</a></li><li><a href="${root}legal/descargo-financiero.html">Aviso financiero</a></li>
         </ul></div>
       </div><div class="footer-bottom"><p>© ${new Date().getFullYear()} Mi Bolsillo. Todos los derechos reservados.</p><p>Educación financiera independiente. No constituye asesoramiento financiero personalizado.</p></div></div></footer>`;
   }
