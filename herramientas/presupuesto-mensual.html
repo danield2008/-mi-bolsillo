@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planificador de presupuesto mensual | Mi Bolsillo</title>
+  <meta name="description" content="Organiza tus ingresos y gastos mensuales con este planificador gratuito de presupuesto de Mi Bolsillo.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B36">
+  <link rel="canonical" href="https://mibolsillo.es/herramientas/presupuesto-mensual.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <script src="../assets/js/layout.js" defer data-root="../"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/calculators.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="contenido">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+          <ol><li><a href="../index.html">Inicio</a></li><li aria-hidden="true">/</li><li><a href="index.html">Herramientas</a></li><li aria-hidden="true">/</li><li aria-current="page">Presupuesto mensual</li></ol>
+        </nav>
+        <span class="page-kicker">HERRAMIENTA GRATUITA</span>
+        <h1 class="page-title">Planificador de presupuesto mensual</h1>
+        <p class="page-lead">Introduce tus ingresos y gastos habituales para saber cuánto dinero te queda al final del mes y qué peso tiene cada categoría.</p>
+      </div>
+    </header>
+
+    <section class="content-shell">
+      <div class="calculator-wrap">
+        <div class="calculator-panel">
+          <div class="calculator-intro">
+            <p>Introduce tus datos y pulsa el botón para obtener una estimación. Los cálculos se realizan en tu navegador; los valores no se envían a Mi Bolsillo.</p>
+          </div>
+          <form class="calculator-form" id="budget-form" data-calculator="budget" novalidate>
+            <div class="calculator-fields">
+              <div class="calculator-field"><label for="budget-income">Ingresos netos mensuales (€)</label><input id="budget-income" type="number" min="0" step="0.01" value="1800" inputmode="decimal" required></div>
+  <div class="calculator-field"><label for="budget-housing">Vivienda (€)</label><input id="budget-housing" type="number" min="0" step="0.01" value="600" inputmode="decimal"></div>
+  <div class="calculator-field"><label for="budget-bills">Suministros y comunicaciones (€)</label><input id="budget-bills" type="number" min="0" step="0.01" value="150" inputmode="decimal"></div>
+  <div class="calculator-field"><label for="budget-food">Alimentación (€)</label><input id="budget-food" type="number" min="0" step="0.01" value="250" inputmode="decimal"></div>
+  <div class="calculator-field"><label for="budget-transport">Transporte (€)</label><input id="budget-transport" type="number" min="0" step="0.01" value="100" inputmode="decimal"></div>
+  <div class="calculator-field"><label for="budget-debt">Deudas y préstamos (€)</label><input id="budget-debt" type="number" min="0" step="0.01" value="100" inputmode="decimal"></div>
+  <div class="calculator-field"><label for="budget-leisure">Ocio y compras (€)</label><input id="budget-leisure" type="number" min="0" step="0.01" value="150" inputmode="decimal"></div>
+  <div class="calculator-field"><label for="budget-other">Otros gastos (€)</label><input id="budget-other" type="number" min="0" step="0.01" value="100" inputmode="decimal"></div>
+            </div>
+            <button class="btn btn-primary calculator-submit" type="submit">Calcular resultado →</button>
+            <div class="calculator-error" id="calculator-error" role="alert" hidden></div>
+          </form>
+          <div class="calculator-result" id="calculator-result" aria-live="polite" hidden></div>
+        </div>
+        <div class="content-narrow calculator-help">
+          <h2>Cómo usar el planificador</h2><p>Introduce los ingresos netos que esperas recibir y los gastos de un mes normal. Usa importes medios realistas y no olvides gastos anuales o trimestrales: puedes repartirlos entre los meses para evitar sorpresas.</p><p>El resultado muestra el total de gastos y el saldo que queda. Un saldo positivo no significa que todo ese dinero esté disponible para gastar: quizá debas reservarlo para gastos irregulares, objetivos, impuestos o ahorro.</p>
+          <div class="notice-box"><p><strong>Importante:</strong> resultado orientativo basado en los datos introducidos. No es una oferta, una garantía de rentabilidad ni asesoramiento financiero personalizado.</p></div>
+          <p><a href="index.html">← Volver a todas las herramientas</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
