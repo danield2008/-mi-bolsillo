@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de la regla 50/30/20 | Mi Bolsillo</title>
+  <meta name="description" content="Calcula cuánto destinar a necesidades, deseos y ahorro con la regla presupuestaria 50/30/20.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#123B36">
+  <link rel="canonical" href="https://mibolsillo.es/herramientas/regla-50-30-20.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <script src="../assets/js/layout.js" defer data-root="../"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/calculators.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="contenido">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+          <ol><li><a href="../index.html">Inicio</a></li><li aria-hidden="true">/</li><li><a href="index.html">Herramientas</a></li><li aria-hidden="true">/</li><li aria-current="page">Regla 50/30/20</li></ol>
+        </nav>
+        <span class="page-kicker">HERRAMIENTA GRATUITA</span>
+        <h1 class="page-title">Calculadora de la regla 50/30/20</h1>
+        <p class="page-lead">Divide tus ingresos netos mensuales en necesidades, deseos y ahorro para crear una primera guía de presupuesto.</p>
+      </div>
+    </header>
+
+    <section class="content-shell">
+      <div class="calculator-wrap">
+        <div class="calculator-panel">
+          <div class="calculator-intro">
+            <p>Introduce tus datos y pulsa el botón para obtener una estimación. Los cálculos se realizan en tu navegador; los valores no se envían a Mi Bolsillo.</p>
+          </div>
+          <form class="calculator-form" id="rule-form" data-calculator="rule" novalidate>
+            <div class="calculator-fields">
+              <div class="calculator-field"><label for="rule-income">Ingresos netos mensuales (€)</label><input id="rule-income" type="number" min="0" step="0.01" value="1800" inputmode="decimal" required><small>Introduce lo que recibes después de impuestos y cotizaciones.</small></div>
+            </div>
+            <button class="btn btn-primary calculator-submit" type="submit">Calcular resultado →</button>
+            <div class="calculator-error" id="calculator-error" role="alert" hidden></div>
+          </form>
+          <div class="calculator-result" id="calculator-result" aria-live="polite" hidden></div>
+        </div>
+        <div class="content-narrow calculator-help">
+          <h2>¿Qué significa 50/30/20?</h2><ul><li><strong>50 % para necesidades:</strong> vivienda, suministros, alimentación básica y transporte necesario.</li><li><strong>30 % para deseos:</strong> ocio, compras no esenciales y suscripciones.</li><li><strong>20 % para ahorro y objetivos:</strong> fondo de emergencia, amortización adicional de deuda o ahorro a largo plazo.</li></ul><p>Es una referencia orientativa, no una regla obligatoria. Si el coste de vivienda o tus ingresos hacen inviable esta distribución, adapta los porcentajes a tu situación real.</p>
+          <div class="notice-box"><p><strong>Importante:</strong> resultado orientativo basado en los datos introducidos. No es una oferta, una garantía de rentabilidad ni asesoramiento financiero personalizado.</p></div>
+          <p><a href="index.html">← Volver a todas las herramientas</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
