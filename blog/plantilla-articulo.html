@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TÍTULO DEL ARTÍCULO | Mi Bolsillo</title>
+  <meta name="description" content="Escribe aquí una descripción única del artículo, clara y útil, de aproximadamente 150 caracteres.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#123B36">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/content.css">
+  <!-- Este archivo es una plantilla: al crear un artículo real, reemplaza los metadatos,
+       añade una canonical propia y cambia robots a index, follow. -->
+  <script src="../assets/js/layout.js" defer data-root="../"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/article.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "TÍTULO DEL ARTÍCULO",
+        "description": "DESCRIPCIÓN DEL ARTÍCULO",
+        "author": {"@type": "Person", "name": "NOMBRE DEL AUTOR"},
+        "publisher": {"@type": "Organization", "name": "Mi Bolsillo", "url": "https://mibolsillo.es/"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "URL_CANONICA_DEL_ARTICULO"},
+        "datePublished": "AAAA-MM-DD",
+        "dateModified": "AAAA-MM-DD",
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mibolsillo.es/"},
+          {"@type": "ListItem", "position": 2, "name": "Categoría", "item": "URL_DE_LA_CATEGORIA"},
+          {"@type": "ListItem", "position": 3, "name": "Título del artículo", "item": "URL_CANONICA_DEL_ARTICULO"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="contenido">
+    <header class="article-header">
+      <div class="article-header-inner">
+        <nav class="breadcrumbs" aria-label="Migas de pan">
+          <ol>
+            <li><a href="../index.html">Inicio</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="../categorias/ahorro/index.html">Categoría</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">Título del artículo</li>
+          </ol>
+        </nav>
+        <span class="page-kicker">CATEGORÍA · GUÍA PRÁCTICA</span>
+        <h1>Título claro del artículo que responde a la búsqueda del lector</h1>
+        <p class="article-subtitle">Explica en una o dos frases qué aprenderá la persona y qué problema concreto le ayudará a resolver esta guía.</p>
+        <div class="page-meta">
+          <span>Por <strong>NOMBRE DEL AUTOR</strong></span>
+          <span>Actualizado: <time datetime="AAAA-MM-DD">DD/MM/AAAA</time></span>
+          <span id="reading-time">Calculando lectura…</span>
+        </div>
+        <div class="article-tools">
+          <button class="article-action" id="share-article" type="button">Compartir artículo</button>
+          <button class="article-action" id="copy-article-link" type="button">Copiar enlace</button>
+        </div>
+        <p class="share-status" id="share-status" aria-live="polite"></p>
+        <div class="author-line">
+          <div class="author-avatar" aria-hidden="true">MB</div>
+          <div><strong>NOMBRE DEL AUTOR</strong><span>Autor/a · Mi Bolsillo</span></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="article-layout">
+      <aside class="article-sidebar" aria-label="Índice del artículo">
+        <div class="toc-card">
+          <h2>En este artículo</h2>
+          <ol id="toc-list"></ol>
+        </div>
+      </aside>
+
+      <article class="article-body" id="article-body">
+        <div class="summary-box">
+          <strong>En pocas palabras</strong>
+          <p>Resume aquí la respuesta principal en dos o tres frases. Da al lector una respuesta útil desde el principio.</p>
+        </div>
+
+        <p>Utiliza esta introducción para contextualizar la pregunta y explicar por qué importa. Evita promesas absolutas y define cualquier término financiero que pueda resultar nuevo.</p>
+
+        <h2>Qué debes saber antes de empezar</h2>
+        <p>Desarrolla el contexto necesario y explica los conceptos con lenguaje sencillo. Cita fuentes oficiales cuando aporten datos, normas o condiciones relevantes.</p>
+
+        <h2>Cómo aplicarlo paso a paso</h2>
+        <p>Explica el método con pasos concretos y verificables. Incluye un ejemplo numérico con sus hipótesis para que el lector pueda reproducirlo.</p>
+        <h3>Ejemplo práctico</h3>
+        <p>Introduce aquí un caso ilustrativo. Distingue claramente los datos hipotéticos de los datos reales y muestra las operaciones usadas.</p>
+
+        <h2>Errores frecuentes que conviene evitar</h2>
+        <ul>
+          <li>Explica un error habitual y cómo prevenirlo.</li>
+          <li>Añade otro error relevante, con una alternativa práctica.</li>
+          <li>Advierte de los límites del método o de las circunstancias que cambian el resultado.</li>
+        </ul>
+
+        <h2>Resumen y siguientes pasos</h2>
+        <p>Recapitula las ideas más importantes y enlaza a una herramienta o guía relacionada de Mi Bolsillo.</p>
+
+        <section class="faq-section" aria-labelledby="faq-title">
+          <h2 id="faq-title">Preguntas frecuentes</h2>
+          <details>
+            <summary>¿Cuál es la primera cosa que debería hacer?</summary>
+            <p>Escribe una respuesta directa, útil y coherente con el contenido del artículo.</p>
+          </details>
+          <details>
+            <summary>¿Este método funciona para todo el mundo?</summary>
+            <p>Explica para quién puede ser útil y qué circunstancias pueden hacer que no sea adecuado.</p>
+          </details>
+          <details>
+            <summary>¿Dónde puedo ampliar la información?</summary>
+            <p>Incluye fuentes oficiales y enlaces internos relacionados.</p>
+          </details>
+        </section>
+
+        <section aria-labelledby="related-title">
+          <h2 id="related-title">También te puede interesar</h2>
+          <div class="related-grid">
+            <a class="related-card" href="../blog/como-ahorrar-100-euros.html"><strong>Guía relacionada 1</strong><p>Una breve explicación de por qué complementa este artículo.</p></a>
+            <a class="related-card" href="../herramientas/calculadora-ahorro.html"><strong>Herramienta relacionada</strong><p>Utiliza esta calculadora gratuita para llevar la teoría a la práctica.</p></a>
+          </div>
+        </section>
+
+        <p class="article-disclaimer">Contenido educativo e informativo. No constituye asesoramiento financiero, fiscal ni de inversión personalizado. Comprueba las condiciones aplicables a tu caso antes de tomar decisiones.</p>
+      </article>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
