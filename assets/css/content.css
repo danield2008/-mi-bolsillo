@@ -19,7 +19,7 @@
 .content-narrow a,.article-body a{color:var(--primary-light);text-decoration:underline;text-underline-offset:3px}
 .notice-box,.summary-box{padding:20px 22px;border-left:4px solid var(--accent);background:var(--surface-soft);border-radius:0 12px 12px 0;margin:24px 0}
 .notice-box p:last-child,.summary-box p:last-child{margin-bottom:0}
-.placeholder-warning{padding:16px 18px;border:1px solid #D5A64B;background:#FFF7E7;color:#604A1D;border-radius:10px;margin:20px 0;font-size:.9rem}
+.placeholder-warning{padding:16px 18px;border:1px solid #806B3D;background:#2C291D;color:#F0DCA9;border-radius:10px;margin:20px 0;font-size:.9rem}
 .article-header{padding:54px 0 30px;background:var(--surface-soft)}
 .article-header-inner{max-width:880px;margin:auto;padding:0 24px}
 .article-header h1{font-size:clamp(2.15rem,5vw,3.7rem);margin:12px 0 18px}
@@ -53,7 +53,7 @@
 .legal-updated{color:var(--text-secondary);font-size:.82rem;margin-bottom:25px}
 @media(max-width:800px){.article-layout{grid-template-columns:1fr;gap:25px}.article-sidebar{position:static;order:0}.article-body{order:1}.toc-card ol{columns:2}.content-shell{width:calc(100% - 36px)}}
 @media(max-width:520px){.article-layout{width:calc(100% - 32px);padding-top:25px}.article-header{padding-top:40px}.toc-card ol{columns:1}.related-grid{grid-template-columns:1fr}.content-narrow h2,.article-body h2{font-size:1.4rem}}
-html[data-theme=dark] .placeholder-warning{background:#382D18;border-color:#8D713B;color:#F5DDA8}
+
 
 
 /* Calculadoras */
