@@ -90,3 +90,11 @@ html[data-theme=dark] .placeholder-warning{background:#382D18;border-color:#8D71
 .tool-directory-card p{font-size:.86rem;margin:7px 0 12px;line-height:1.65}
 .tool-directory-card strong{color:var(--primary-light);font-size:.82rem}
 @media(max-width:580px){.calculator-fields,.result-grid,.tool-directory-grid{grid-template-columns:1fr}.calculator-submit{width:100%}.tool-directory-card{padding:18px}}
+
+
+/* Tablas de artículos: lectura y desbordamiento en pantallas pequeñas */
+.article-body table,.content-narrow table{width:100%;border-collapse:collapse;margin:22px 0;font-size:.88rem;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.article-body th,.article-body td,.content-narrow th,.content-narrow td{padding:12px 14px;text-align:left;border:1px solid var(--border);vertical-align:top;min-width:100px}
+.article-body th,.content-narrow th{background:var(--surface-soft);color:var(--text);font-weight:750}
+.article-body tr:nth-child(even) td,.content-narrow tr:nth-child(even) td{background:var(--surface-soft)}
+.article-body table p,.content-narrow table p{margin:0}
