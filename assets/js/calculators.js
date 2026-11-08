@@ -8,7 +8,7 @@
   const resultBox = document.getElementById("calculator-result");
   const errorBox = document.getElementById("calculator-error");
   const euro = new Intl.NumberFormat("es-ES", { style:"currency", currency:"EUR", maximumFractionDigits:2 });
-  const number = id => Number(document.getElementById(id)?.value);
+  const number = id => { const el = document.getElementById(id); return el && el.value.trim() !== "" ? Number(el.value) : NaN; };
   const field = id => document.getElementById(id);
   const validNonNegative = value => Number.isFinite(value) && value >= 0;
   const money = value => euro.format(value);
