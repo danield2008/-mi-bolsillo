@@ -47,3 +47,7 @@ No se ha activado Google AdSense ni se carga publicidad. Antes de usar cookies o
 
 ## Aviso
 El contenido será educativo y no sustituye el asesoramiento financiero personalizado. Las herramientas ofrecen estimaciones y deben explicar sus supuestos.
+
+
+## Plan editorial
+El mapa SEO de 60 artículos está en [docs/plan-editorial-60-articulos.md](docs/plan-editorial-60-articulos.md). Incluye siete clústeres temáticos, palabras clave principales, intención de búsqueda, dificultad cualitativa y las 15 primeras prioridades de cola larga.
