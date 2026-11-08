@@ -20,10 +20,21 @@
           <a href="${root}blog/index.html">Blog</a>
         </nav>
         <div class="header-actions">
-          <a class="icon-button search-button" href="${root}buscar.html" aria-label="Buscar artículos" title="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg></a>
+          <button class="icon-button search-button" id="search-toggle" type="button" aria-label="Abrir buscador" title="Buscar artículos" aria-expanded="false" aria-controls="header-search-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg></button>
           <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span></button>
         </div>
-      </div></header>`;
+      </div>
+      <section class="header-search-panel" id="header-search-panel" aria-label="Buscador de Mi Bolsillo" hidden>
+        <form class="header-search-form" id="header-search-form" role="search">
+          <label class="visually-hidden" for="header-search-input">Buscar artículos</label>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="header-search-input" type="search" placeholder="¿Qué quieres encontrar?" autocomplete="off">
+          <button type="button" class="header-search-close" id="header-search-close" aria-label="Cerrar buscador">×</button>
+        </form>
+        <p class="header-search-status" id="header-search-status" role="status" aria-live="polite">Busca artículos sobre ahorro, presupuesto y finanzas.</p>
+        <div class="header-search-results" id="header-search-results"></div>
+      </section>
+      </header>`;
   }
   if (footerTarget) {
     footerTarget.innerHTML = `
@@ -48,6 +59,13 @@
         </ul></div>
       </div><div class="footer-bottom"><p>© ${new Date().getFullYear()} Mi Bolsillo. Todos los derechos reservados.</p><p>Educación financiera independiente. No constituye asesoramiento financiero personalizado.</p></div></div></footer>`;
   }
+  if (headerTarget) {
+    const searchScript = document.createElement("script");
+    searchScript.src = root + "assets/js/header-search.js";
+    searchScript.async = true;
+    document.head.appendChild(searchScript);
+  }
+
   if (headerTarget) {
     const currentPath = window.location.pathname;
     headerTarget.querySelectorAll(".main-nav a").forEach(link => {
