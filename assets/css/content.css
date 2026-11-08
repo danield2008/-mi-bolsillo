@@ -78,7 +78,7 @@ html[data-theme=dark] .placeholder-warning{background:#382D18;border-color:#8D71
 .result-note{font-size:.79rem;line-height:1.65;margin-top:14px}
 .result-bar{height:12px;background:var(--border);border-radius:99px;overflow:hidden;display:flex;margin:15px 0 8px}
 .result-bar span{height:100%}
-.calculator-error{color:#A33B34;background:#FCEDEC;border:1px solid #EBC4C1;border-radius:9px;padding:12px 14px;font-size:.85rem}
+.calculator-error{color:#FFD2CE;background:#3A2220;border:1px solid #74403B;border-radius:9px;padding:12px 14px;font-size:.85rem}
 .calculator-help{margin-top:25px}
 .calculator-help h2{font-size:1.4rem;margin:30px 0 12px}
 .calculator-help p,.calculator-help li{line-height:1.8}
