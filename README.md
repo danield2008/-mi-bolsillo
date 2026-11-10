@@ -74,7 +74,7 @@ Las seis calculadoras comparten `assets/js/calculators.js`. Los resultados son e
 
 ## Privacidad, contacto y publicidad
 
-El sitio es estático y no tiene cuentas, base de datos ni newsletter conectada. El enlace de incidencias de GitHub lleva a una plataforma externa y pública; no se deben publicar datos personales ni financieros.
+El sitio es estático y no tiene cuentas, base de datos ni newsletter conectada. El enlace de incidencias de GitHub lleva a una plataforma externa y pública; no se deben publicar datos personales ni financieros. El correo de contacto indicado debe verificarse antes de dar por operativo el canal.
 
 El código actual no instala etiquetas de analítica o publicidad ni utiliza almacenamiento local para preferencias. Antes de añadir AdSense hay que completar la identidad legal y domicilio del responsable, revisar las políticas de privacidad y cookies, integrar una CMP certificada adecuada para el EEE y añadir el identificador real de editor a `ads.txt`. No se debe inventar ni publicar un ID de editor de ejemplo.
 
