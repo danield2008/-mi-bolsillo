@@ -5,18 +5,46 @@
   // Mantén este índice actualizado cada vez que publiques un artículo nuevo.
   const articles = [
     {
+      title: "Cómo hacer un presupuesto mensual paso a paso",
+      category: "Presupuesto",
+      excerpt: "Organiza ingresos, gastos fijos, variables y pagos irregulares con un método sencillo.",
+      url: "blog/como-hacer-un-presupuesto-mensual-paso-a-paso.html",
+      keywords: "presupuesto mensual gastos fijos variables ingresos dinero organizar sueldo"
+    },
+    {
+      title: "Gastos fijos, variables y ocasionales: ejemplos para una casa",
+      category: "Presupuesto",
+      excerpt: "Distingue cada tipo de gasto y aprende a reservar dinero para pagos que llegan una vez al año.",
+      url: "blog/gastos-fijos-variables-y-ocasionales-ejemplos-para-una-casa.html",
+      keywords: "gastos fijos variables ocasionales irregulares recibos pagos casa"
+    },
+    {
+      title: "Cómo controlar los gastos diarios sin complicarte",
+      category: "Presupuesto",
+      excerpt: "Crea una rutina breve para registrar pequeños gastos y revisar tus hábitos sin obsesionarte.",
+      url: "blog/como-controlar-los-gastos-diarios-sin-complicarte.html",
+      keywords: "gastos diarios gastos hormiga micro spending controlar gastos cafés"
+    },
+    {
+      title: "Cómo fijar un objetivo de ahorro realista y cumplirlo",
+      category: "Ahorro",
+      excerpt: "Calcula cuánto reservar cada mes y adapta la meta y el plazo a tu presupuesto.",
+      url: "blog/como-fijar-un-objetivo-de-ahorro-realista-y-cumplirlo.html",
+      keywords: "objetivo ahorro meta realista cuánto ahorrar mensual objetivo ahorro plazo"
+    },
+    {
       title: "Cómo ahorrar 100 euros al mes sin cambiar toda tu vida",
       category: "Ahorro",
-      excerpt: "Un método realista para revisar gastos, elegir ajustes sostenibles y automatizar el ahorro.",
+      excerpt: "Un método realista para analizar gastos, ajustar hábitos y automatizar el ahorro.",
       url: "blog/como-ahorrar-100-euros.html",
       keywords: "ahorrar 100 euros sueldo dinero hábitos gasto ahorro mensual"
     },
     {
       title: "La regla 50/30/20: cómo organizar tu sueldo",
-      category: "Presupuesto y gastos",
+      category: "Presupuesto",
       excerpt: "Reparte tus ingresos netos entre necesidades, deseos y objetivos financieros.",
       url: "blog/regla-50-30-20.html",
-      keywords: "regla 50 30 20 presupuesto gastos necesidades deseos ahorro sueldo 1500"
+      keywords: "regla 50 30 20 presupuesto gastos necesidades deseos ahorro sueldo"
     },
     {
       title: "Fondo de emergencia: cuánto dinero necesitas y dónde guardarlo",
@@ -26,7 +54,6 @@
       keywords: "fondo emergencia ahorro imprevistos dinero colchón gastos esenciales"
     }
   ];
-
   const normalize = value => String(value || "")
     .toLocaleLowerCase("es")
     .normalize("NFD")
