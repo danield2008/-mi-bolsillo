@@ -125,25 +125,19 @@
     if (noResults) noResults.hidden = found.length > 0;
   }
 
-  // En la Home, filtra las tarjetas mientras se escribe.
+  // En la Home se mantienen los tres artículos destacados visibles.
+  // Al enviar el formulario se buscan todos los artículos en buscar.html.
   if (homeGrid && input) {
-    const cards = [...homeGrid.querySelectorAll(".article-card")];
-    const filterHome = () => {
+    input.addEventListener("input", () => {
       const q = normalize(input.value);
-      let count = 0;
-      cards.forEach(card => {
-        const text = normalize([
-          card.dataset.title, card.dataset.category,
-          card.dataset.keywords, card.textContent
-        ].join(" "));
-        const visible = !q || text.includes(q);
-        card.hidden = !visible;
-        if (visible) count++;
-      });
-      if (status) status.textContent = q ? count + (count === 1 ? " artículo encontrado." : " artículos encontrados.") : "";
-      if (noResults) noResults.hidden = count > 0 || !q;
-    };
-    input.addEventListener("input", filterHome);
+      homeGrid.querySelectorAll(".article-card").forEach(card => { card.hidden = false; });
+      if (noResults) noResults.hidden = true;
+      if (status) {
+        status.textContent = q
+          ? "Pulsa Enter para buscar entre los " + articles.length + " artículos publicados."
+          : "";
+      }
+    });
   }
 
   // Al enviar cualquier buscador se abre la página global de resultados.
