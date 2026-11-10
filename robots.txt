@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /buscar.html
-Disallow: /blog/plantilla-articulo.html
 Disallow: /docs/
 
 Sitemap: https://mibolsillo.eu/sitemap.xml
