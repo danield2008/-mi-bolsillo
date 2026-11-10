@@ -80,10 +80,10 @@ El código actual no instala etiquetas de analítica o publicidad ni utiliza alm
 
 ## Estado del proyecto
 
-- Siete artículos publicados.
+- Doce artículos publicados, con una guía inicial en cada categoría.
 - Siete páginas de categoría.
 - Seis calculadoras.
-- Buscadores conectados a los siete artículos.
+- Buscadores conectados a los doce artículos.
 - Página de contacto actualizada con el correo facilitado por el propietario; debe comprobarse que el buzón existe y recibe mensajes.
 - Documentación legal todavía pendiente de los datos reales del titular y revisión final.
 - AdSense y publicidad todavía no instalados.
