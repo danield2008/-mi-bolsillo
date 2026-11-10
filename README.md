@@ -98,8 +98,8 @@ El contenido es educativo y general, no asesoramiento financiero, fiscal, juríd
 ## Estado actual
 
 - Siete páginas de categoría con contenido introductorio y recursos.
-- Tres artículos publicados.
+- Siete artículos publicados, con cuatro nuevas guías de presupuesto y ahorro.
 - Seis calculadoras.
-- Blog y buscador con los tres artículos actuales.
+- Blog y ambos buscadores conectados a los siete artículos publicados.
 - Páginas legales disponibles, pero pendientes de completar con la identidad y datos reales del responsable.
 - Newsletter, dominio propio y publicidad todavía no conectados.
