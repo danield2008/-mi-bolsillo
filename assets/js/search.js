@@ -5,6 +5,41 @@
   // Mantén este índice actualizado cada vez que publiques un artículo nuevo.
   const articles = [
     {
+      title: "Primeros pasos para entender los trámites fiscales de una actividad",
+      category: "Impuestos y trámites",
+      excerpt: "Identifica trámites censales, obligaciones fiscales y fuentes oficiales antes de iniciar una actividad.",
+      url: "blog/primeros-pasos-para-entender-los-tramites-fiscales-de-una-actividad.html",
+      keywords: "impuestos trámites fiscales actividad económica modelo 036 alta censo AEAT"
+    },
+    {
+      title: "Ingresos extra en España: qué costes y obligaciones revisar",
+      category: "Ingresos extra",
+      excerpt: "Calcula costes, tiempo y margen real, y revisa las obligaciones que pueden aplicarse.",
+      url: "blog/ingresos-extra-en-espana-que-costes-y-obligaciones-revisar.html",
+      keywords: "ingresos extra costes beneficio actividad autónomo Seguridad Social Hacienda"
+    },
+    {
+      title: "Cómo comparar cuentas bancarias y tarjetas sin fijarte solo en la oferta",
+      category: "Banca y tarjetas",
+      excerpt: "Compara comisiones, condiciones, tarjetas, remuneración y modalidades de pago.",
+      url: "blog/como-comparar-cuentas-bancarias-y-tarjetas.html",
+      keywords: "cuenta bancaria comisiones tarjetas débito crédito comparar TAE bancos"
+    },
+    {
+      title: "Antes de invertir por primera vez: riesgos, costes y plazo",
+      category: "Inversión",
+      excerpt: "Revisa objetivos, horizonte temporal, riesgo, diversificación y costes antes de invertir.",
+      url: "blog/antes-de-invertir-por-primera-vez-riesgos-costes-y-plazo.html",
+      keywords: "invertir por primera vez riesgo costes diversificación CNMV productos inversión"
+    },
+    {
+      title: "Cómo organizar el pago de tus deudas sin perder el control",
+      category: "Deudas y créditos",
+      excerpt: "Ordena préstamos y tarjetas, compara sus costes y prepara un plan de pago realista.",
+      url: "blog/como-organizar-el-pago-de-deudas-sin-perder-el-control.html",
+      keywords: "organizar pagar deudas préstamos tarjetas intereses TAE revolving crédito"
+    },
+    {
       title: "Cómo hacer un presupuesto mensual paso a paso",
       category: "Presupuesto",
       excerpt: "Organiza ingresos, gastos fijos, variables y pagos irregulares con un método sencillo.",
@@ -53,8 +88,7 @@
       url: "blog/fondo-emergencia.html",
       keywords: "fondo emergencia ahorro imprevistos dinero colchón gastos esenciales"
     }
-  ];
-  const normalize = value => String(value || "")
+  ];  const normalize = value => String(value || "")
     .toLocaleLowerCase("es")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
