@@ -1,24 +1,26 @@
 # Mi Bolsillo
 
-Web estática de educación financiera en español, dirigida principalmente a lectores de España. Incluye guías de ahorro y presupuesto, categorías temáticas y calculadoras que funcionan en el navegador.
+Proyecto estático de educación financiera en español, dirigido principalmente a lectores de España. Incluye guías de ahorro, presupuesto, banca, deuda e inversión básica, además de calculadoras gratuitas que se ejecutan en el navegador.
 
-## Dirección de la web
+## Dominio y publicación
 
-Actualmente se utiliza GitHub Pages, sin dominio personalizado:
+Dominio configurado en el repositorio mediante el archivo `CNAME`:
 
-**https://danield2008.github.io/-mi-bolsillo/**
+**https://mibolsillo.eu/**
 
-El dominio propio se conectará más adelante. Antes de hacerlo habrá que actualizar canonical, Open Graph, datos estructurados, sitemap, DNS y configuración de GitHub Pages. No se debe crear un archivo `CNAME` hasta tener el dominio registrado y sus DNS preparados.
+El repositorio utiliza GitHub Pages desde `main` y la carpeta `/(root)`. Antes de considerar el dominio plenamente operativo, hay que comprobar en Namecheap los registros DNS requeridos por GitHub Pages, el estado del dominio en **Settings → Pages**, la emisión del certificado HTTPS y la redirección entre las variantes con y sin `www`.
 
-## Tecnología
+No volver a utilizar `danield2008.github.io/-mi-bolsillo/` como canonical o URL pública principal una vez que el dominio personalizado esté operativo.
+
+## Tecnología y funciones
 
 - HTML5, CSS3 y JavaScript puro.
-- Sin frameworks, base de datos ni servidor propio.
-- Diseño responsive y **modo oscuro permanente**.
-- Cabecera y pie reutilizables mediante JavaScript.
-- Buscador local de los artículos publicados.
-- Seis calculadoras con cálculos en el navegador.
-- Datos SEO básicos, Open Graph y datos estructurados en páginas de contenido.
+- Diseño responsive y modo oscuro permanente.
+- Cabecera y pie reutilizables.
+- Buscador desplegable en la cabecera y página de resultados.
+- Seis calculadoras que realizan sus operaciones en el navegador.
+- Animaciones progresivas con Intersection Observer y respeto a `prefers-reduced-motion`.
+- Metadatos SEO, Open Graph, canonicals y datos estructurados en las páginas de contenido.
 
 ## Estructura principal
 
@@ -29,31 +31,19 @@ El dominio propio se conectará más adelante. Antes de hacerlo habrá que actua
 ├── sobre-nosotros.html
 ├── contacto.html
 ├── 404.html
+├── CNAME
 ├── robots.txt
 ├── sitemap.xml
 ├── blog/
 │   ├── index.html
 │   ├── plantilla-articulo.html
-│   ├── como-ahorrar-100-euros.html
-│   ├── regla-50-30-20.html
-│   └── fondo-emergencia.html
+│   └── [7 artículos publicados]
 ├── categorias/
 │   ├── index.html
-│   ├── ahorro/
-│   ├── presupuesto/
-│   ├── deudas/
-│   ├── inversion/
-│   ├── ingresos-extra/
-│   ├── impuestos/
-│   └── banca/
+│   └── [7 categorías]
 ├── herramientas/
 │   ├── index.html
-│   ├── calculadora-ahorro.html
-│   ├── interes-compuesto.html
-│   ├── regla-50-30-20.html
-│   ├── cuota-prestamo.html
-│   ├── fondo-emergencia.html
-│   └── presupuesto-mensual.html
+│   └── [6 calculadoras]
 ├── legal/
 └── assets/
     ├── css/
@@ -61,45 +51,39 @@ El dominio propio se conectará más adelante. Antes de hacerlo habrá que actua
     └── img/
 ```
 
-## Publicación en GitHub Pages
+## Publicar un artículo nuevo
 
-En el repositorio, abre **Settings → Pages**. En Build and deployment selecciona **Deploy from a branch**, elige la rama `main` y la carpeta `/(root)`. Guarda los cambios y espera a que GitHub termine el despliegue.
+1. Crea el archivo dentro de `blog/` usando `blog/plantilla-articulo.html` como base.
+2. Escribe contenido original, útil y revisado; utiliza fuentes primarias y ejemplos hipotéticos claramente identificados.
+3. Sustituye título, descripción, canonical, Open Graph, fechas, autoría y datos estructurados.
+4. Añade enlaces internos desde la categoría correspondiente, el índice del blog y los artículos relacionados.
+5. Actualiza los dos índices de búsqueda: `assets/js/header-search.js` y `assets/js/search.js`.
+6. Actualiza `sitemap.xml` solo con las páginas indexables y verifica los enlaces.
 
-## Añadir un artículo nuevo
+## Calculadoras
 
-1. Crea un HTML dentro de `blog/` usando `blog/plantilla-articulo.html` como base.
-2. Sustituye el título, descripción, canonical, Open Graph, autoría, fechas y datos estructurados.
-3. Añade el contenido original, ejemplos, fuentes y enlaces internos.
-4. Incorpora el artículo a `blog/index.html`, a su categoría, a `assets/js/search.js` y a `sitemap.xml`.
-5. Comprueba la versión móvil, los enlaces y los metadatos antes de publicarlo.
-
-## Herramientas
-
-Las calculadoras están en `herramientas/` y comparten `assets/js/calculators.js`. Sus resultados son estimaciones educativas y no sustituyen las condiciones contractuales ni el asesoramiento profesional.
+Las seis calculadoras comparten `assets/js/calculators.js`. Los resultados son estimaciones educativas. No sustituyen las condiciones contractuales, la TAE ni el asesoramiento profesional.
 
 ## SEO y mantenimiento
 
-- Revisa title, meta description y canonical de cada página indexable.
-- Mantén `sitemap.xml` y `robots.txt` actualizados con la URL pública vigente.
-- No incluyas páginas de prueba, páginas duplicadas ni documentos legales incompletos en el sitemap.
-- Revisa datos, fuentes y fechas de los artículos financieros antes de cada actualización.
-- Cuando el dominio propio esté conectado, cambia las URL de forma coordinada y verifica Search Console.
+- Utiliza `https://mibolsillo.eu/` como dominio canónico cuando DNS y HTTPS estén verificados.
+- Mantén `robots.txt` y `sitemap.xml` sincronizados con el dominio real.
+- No incluyas en el sitemap las páginas `noindex`, la plantilla, la página de búsqueda ni el error 404.
+- Revisa enlaces, metadatos, fuentes y fechas en cada publicación.
+- Verifica el dominio en Search Console y envía `https://mibolsillo.eu/sitemap.xml` cuando el dominio responda correctamente.
 
-## Privacidad, formularios y publicidad
+## Privacidad, contacto y publicidad
 
-La versión actual es una web estática. No tiene cuentas de usuario, base de datos ni formulario de newsletter conectado. El canal de correcciones de GitHub es público: no se deben enviar datos personales ni financieros.
+El sitio es estático y no tiene cuentas, base de datos ni newsletter conectada. El enlace de incidencias de GitHub lleva a una plataforma externa y pública; no se deben publicar datos personales ni financieros.
 
-No se han activado anuncios ni cookies publicitarias. Antes de incorporar AdSense o analítica, hay que completar los textos legales con los datos reales del responsable, hacer un inventario de tecnologías, implantar una CMP adecuada y cumplir las condiciones del proveedor. El archivo `ads.txt` debe completarse únicamente con el identificador de editor que proporcione Google.
+El código actual no instala etiquetas de analítica o publicidad ni utiliza almacenamiento local para preferencias. Antes de añadir AdSense hay que completar la identidad legal y domicilio del responsable, revisar las políticas de privacidad y cookies, integrar una CMP certificada adecuada para el EEE y añadir el identificador real de editor a `ads.txt`. No se debe inventar ni publicar un ID de editor de ejemplo.
 
-## Contenido y responsabilidad
+## Estado del proyecto
 
-El contenido es educativo y general, no asesoramiento financiero, fiscal, jurídico ni de inversión personalizado. Los ejemplos numéricos deben identificarse como hipotéticos y las afirmaciones regulatorias deben contrastarse con fuentes oficiales vigentes.
-
-## Estado actual
-
-- Siete páginas de categoría con contenido introductorio y recursos.
-- Siete artículos publicados, con cuatro nuevas guías de presupuesto y ahorro.
+- Siete artículos publicados.
+- Siete páginas de categoría.
 - Seis calculadoras.
-- Blog y ambos buscadores conectados a los siete artículos publicados.
-- Páginas legales disponibles, pero pendientes de completar con la identidad y datos reales del responsable.
-- Newsletter, dominio propio y publicidad todavía no conectados.
+- Buscadores conectados a los siete artículos.
+- Página de contacto actualizada con el correo facilitado por el propietario; debe comprobarse que el buzón existe y recibe mensajes.
+- Documentación legal todavía pendiente de los datos reales del titular y revisión final.
+- AdSense y publicidad todavía no instalados.
